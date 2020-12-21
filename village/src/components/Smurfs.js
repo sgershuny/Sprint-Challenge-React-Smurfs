@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 import Smurf from './Smurf';
 
 class Smurfs extends Component {
@@ -16,7 +17,9 @@ class Smurfs extends Component {
                 age={smurf.age}
                 height={smurf.height}
                 key={smurf.id}
+                deleteSmurf = {this.props.deleteSmurf}
               />
+              
             );
           })}
         </ul>
